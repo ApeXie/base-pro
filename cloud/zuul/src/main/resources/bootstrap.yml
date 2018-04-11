@@ -1,0 +1,13 @@
+server:
+  port: 9529
+spring:
+  application:
+    name: api-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9527/eureka
+zuul:
+  routes:
+    api-a.path: /mail/**
+    api-a.serviceId: mail-service

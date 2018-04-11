@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: mail-service
+server:
+  port: 9528
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9527/eureka/
+
+
+info:
+  application:
+    name: mail
+    version: 1.0
+    author: ApeXie
